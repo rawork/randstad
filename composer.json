@@ -8,6 +8,7 @@
 	    "symfony/http-foundation": "2.2.*",
 	    "masterexploder/phpthumb": "dev-master",
         "phpoffice/phpexcel": "dev-master",
+        "phpmailer/phpmailer": "dev-master",
         "smarty/smarty": "v3.1.17"
     },
     "autoload": {
