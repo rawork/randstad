@@ -6,6 +6,7 @@ use Fuga\CommonBundle\Controller\PublicController;
 
 use PHPExcel;
 use PHPExcel_Writer_Excel2007;
+use PHPMailer;
 
 class GuestController extends PublicController {
 	
@@ -15,6 +16,23 @@ class GuestController extends PublicController {
 	
 	public function indexAction() {
 		if ('POST' == $_SERVER['REQUEST_METHOD']) {
+			// init phpmailer
+			$mail = new PHPMailer();
+
+			$mail->isMail();
+			$mail->SMTPDebug = 1;
+			$mail->CharSet = 'UTF-8';
+
+			$mail->From = 'info@ancor.ru';
+			$mail->FromName = 'Анкор';
+
+			$mail->addEmbeddedImage(PRJ_DIR.'/bundles/public/img/logo.jpg', 'logo');
+			$mail->isHTML(true);                                  // Set email format to HTML
+
+			$mail->Subject = 'Регистрация на мероприятие Randstad Award';
+			$mail->Body    = $this->render('mail/guest.new.tpl');
+			$mail->AltBody = '';
+
 			$company = $this->get('util')->post('company');
 			$name = $this->get('util')->post('name');
 			$lastname = $this->get('util')->post('lastname');
@@ -36,6 +54,12 @@ class GuestController extends PublicController {
 					'created'  => date('Y-m-d H:i:s'),
 					'updated'  => '0000-00-00 00:00:00',
 				));
+				$mail->clearAddresses();
+				$mail->addAddress($email[$key]);     // Add a recipient
+
+				if(!$mail->send()) {
+					$this->get('log')->write('Mailer Error: ' . $mail->ErrorInfo);
+				}
 			}
 
 			$_SESSION['info'] = 'ok';
