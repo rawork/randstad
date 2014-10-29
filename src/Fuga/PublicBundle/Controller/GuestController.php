@@ -23,13 +23,13 @@ class GuestController extends PublicController {
 			$mail->SMTPDebug = 1;
 			$mail->CharSet = 'UTF-8';
 
-			$mail->From = 'info@ancor.ru';
-			$mail->FromName = 'Анкор';
+			$mail->From = 'award@ancor.ru';
+			$mail->FromName = 'Randstad Award';
 
 			$mail->addEmbeddedImage(PRJ_DIR.'/bundles/public/img/logo.jpg', 'logo');
 			$mail->isHTML(true);                                  // Set email format to HTML
 
-			$mail->Subject = 'Регистрация на мероприятие Randstad Award';
+			$mail->Subject = 'Randstad Award Registration';
 			$mail->Body    = $this->render('mail/guest.new.tpl');
 			$mail->AltBody = '';
 
