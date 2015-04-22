@@ -13,7 +13,8 @@ class GalleryController extends PublicController
 
 	public function indexAction()
 	{
-		$items = $this->get('container')->getItems('gallery_gallery', 'publish=1');
+		$node = $this->getManager('Fuga:Common:Page')->getCurrentNode();
+		$items = $this->get('container')->getItems('gallery_gallery', 'publish=1 AND node_id='.$node['id']);
 
 		foreach ($items as &$item){
 			$sql = "SELECT * FROM system_files WHERE table_name= :table_name AND field_name= :field_name AND entity_id= :entity_id ORDER by sort,id";
