@@ -1,4 +1,3 @@
-<a href="{$prj_ref}/files/randstad-fotos.zip">Скачать все фото (1,1 Гб)</a>
 {foreach from=$items item=item}
 <br/><br/>
 <h4>{$item.name}</h4>
