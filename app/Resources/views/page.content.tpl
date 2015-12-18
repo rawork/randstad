@@ -4,7 +4,8 @@
 		<title>{$title}</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		{$meta}
-		<link rel="stylesheet" href="{$theme_ref}/bootstrap2/css/bootstrap.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="{$theme_ref}/
+		bootstrap2/css/bootstrap.css" type="text/css" media="screen">
 		<link rel="stylesheet" href="{$theme_ref}/public/css/default.css" type="text/css" media="screen">
 		<!--[if lt IE 9]>
 		{*<script type="text/javascript" src="{$theme_ref}/ie/html5shiv.js"></script>*}
@@ -83,6 +84,7 @@
 		<script type="text/javascript" src="{$theme_ref}/jquery/jquery.js"></script>
 		<script type="text/javascript" src="{$theme_ref}/bootstrap2/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="{$theme_ref}/public/js/public.js"></script>
+		{literal}
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -93,5 +95,6 @@
 			ga('send', 'pageview');
 
 		</script>
+		{/literal}
 	</body>
 </html>
