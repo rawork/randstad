@@ -28,15 +28,11 @@ a.file {
     color: #bd9830;
     text-decoration: underline;
     line-height: 22px;
-}
-
-a.file:before {
-    content: url('../img/icon_pdf.svg');
-    position: relative;
-    width: 30px;
-    height: 25px;
-    margin-right: 4px;
-    top: 6px;
+    background-image: url('../img/icon_pdf.png');
+    background-size: 25px 25px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-left: 30px;
 }
 
 .container {
@@ -100,7 +96,8 @@ ul.buttons li.menu .menu-icon {
     width: 33px;
     height: 33px;
     background-color: #fff;
-    background-image: url('../img/icon_hamburger.svg');
+    background-image: url('../img/icon_hamburger.png');
+    background-size: 21px 21px;
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
@@ -139,6 +136,7 @@ ul.partners li {
 .award-announce img {
     display: block;
     margin-right: 10px;
+    width: 51px;
 }
 
 .award-announce div {
@@ -451,7 +449,8 @@ ul.mobile-mainmenu li ul {
     width: 33px;
     height: 33px;
     background-color: #fff;
-    background-image: url('../img/icon_envelope.svg');
+    background-image: url('../img/icon_envelope.png');
+    background-size: 21px;
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
@@ -464,7 +463,8 @@ ul.mobile-mainmenu li ul {
     width: 33px;
     height: 33px;
     background-color: #fff;
-    background-image: url('../img/icon_register.svg');
+    background-image: url('../img/icon_register.png');
+    background-size: 21px;
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
