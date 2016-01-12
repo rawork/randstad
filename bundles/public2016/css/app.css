@@ -470,6 +470,28 @@ ul.mobile-mainmenu li ul {
     cursor: pointer;
 }
 
+.footer {
+    color: #fff;
+    text-align: center;
+    height: 36px;
+    padding-top: 9px;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer span {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content-report a {
+    color: #bd9830;
+}
+
 @media (min-width: 400px) {
     .winner-main .goblet img {
         max-width: 110px !important;
