@@ -33,6 +33,7 @@ a.file {
     background-position: top left;
     background-repeat: no-repeat;
     padding-left: 30px;
+    min-height: 25px;
 }
 
 .container {
@@ -492,6 +493,10 @@ ul.mobile-mainmenu li ul {
     color: #bd9830;
 }
 
+dl {
+    margin-bottom: 0;
+}
+
 @media (min-width: 400px) {
     .winner-main .goblet img {
         max-width: 110px !important;
@@ -677,7 +682,7 @@ ul.mobile-mainmenu li ul {
     ul.partners {
         display: block;
         margin-right: 80px;
-        margin-top: 34px;
+        margin-top: 44px;
     }
 
     ul.partners>li>a {
