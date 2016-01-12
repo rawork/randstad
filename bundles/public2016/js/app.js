@@ -60,6 +60,7 @@
             dots : true,
             arrows: false,
             autoplay: true,
+            autoplaySpeed: 5000,
             lazyLoad: 'progressive',
             slidesToShow: 1,
             slidesToScroll: 1,

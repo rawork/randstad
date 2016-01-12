@@ -634,8 +634,8 @@ ul.mobile-mainmenu li ul {
     }
 
     .logo img {
-        margin-top: -20px;
-        margin-bottom: -15px;
+        /*margin-top: -20px;*/
+        /*margin-bottom: -15px;*/
         display: block;
         max-width: 100% !important;
     }
@@ -655,7 +655,7 @@ ul.mobile-mainmenu li ul {
     ul.partners {
         display: block;
         margin-right: 80px;
-        margin-top: 14px;
+        margin-top: 34px;
     }
 
     ul.partners>li>a {
