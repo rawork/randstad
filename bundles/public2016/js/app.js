@@ -18,6 +18,13 @@
             $(this).parents('.text').slideUp(500);
         });
 
+        $('.btn-archive').bind('click', function(e) {
+            e.preventDefault();
+
+            $(this).hide();
+            $('.news .archive').show();
+        })
+
         $('.winner-other').slick({
             infinite: false,
             dots : false,

@@ -497,6 +497,23 @@ dl {
     margin-bottom: 0;
 }
 
+.news .archive {
+    display: none;
+}
+
+.btn-archive {
+    border: 1px solid #bd9830;
+    background: #bd9830;
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.btn-archive:hover {
+    color: #f1f1f1;
+}
+
 @media (min-width: 400px) {
     .winner-main .goblet img {
         max-width: 110px !important;
