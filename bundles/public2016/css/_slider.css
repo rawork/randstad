@@ -99,6 +99,23 @@
         height: 320px;
     }
 
+    .slide .info {
+        top: 30px;
+        left: 20px;
+        bottom: 30px;
+        right: auto;
+        width: 240px;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .slide a.btn-more {
+        left: 40px;
+        bottom: 45px;
+        right: auto;
+        font-size: 13px;
+    }
+
     #slide1 {
         background-image: url('../img/slider/slide1_md.jpg');
     }
