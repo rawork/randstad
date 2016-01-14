@@ -511,7 +511,7 @@ dl {
 }
 
 .btn-archive:hover {
-    color: #f1f1f1;
+    color: #333;
 }
 
 @media (min-width: 400px) {
@@ -762,7 +762,7 @@ dl {
 
     .countries {
         float: right;
-        width: 50%;
+        width: 52%;
         margin: 0 0 20px 20px;
     }
 
