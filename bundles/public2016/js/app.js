@@ -14,6 +14,13 @@
 
         });
 
+        $(document).on('click', '.attention a', function(e){
+            e.preventDefault();
+
+            $('.attention').hide();
+            $($(this).attr('href')).fadeIn(500);
+        });
+
         $(document).on('click', '.news .text span a', function(e) {
             $(this).parents('.text').slideUp(500);
         });

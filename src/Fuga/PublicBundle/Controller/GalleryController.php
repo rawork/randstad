@@ -39,6 +39,8 @@ class GalleryController extends PublicController
 
 		$is_iphone = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone") || stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
 
+		$this->get('container')->setVar('h1', 'Фотоальбом '.$node['title']);
+
 		return $this->render('gallery/index.tpl', compact('items', 'is_iphone'));
 	}
 } 
