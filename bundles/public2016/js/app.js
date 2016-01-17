@@ -8,7 +8,7 @@
             var textBlock = $(this).next();
 
             if (textBlock.is(':hidden')) {
-                $('.news .text').slideUp(500);
+                //$('.news .text').slideUp(500);
                 textBlock.slideDown(500);
             }
 

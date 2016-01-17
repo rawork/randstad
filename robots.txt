@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /
+Disallow: /award/admin/
 
 User-agent: Yandex
-Disallow: /
-Host: club.ancor.ru
+Disallow: /award/admin/
+Host: ancor.ru
