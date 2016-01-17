@@ -11,6 +11,12 @@ class CommonController extends Controller {
 		
 		return $item ? $item['content'] : '';
 	}
+
+	public function pageAction($params) {
+		$node = $this->get('container')->getItem('page_page',"name='{$params[0]}'");
+
+		return $this->render('page/static.tpl', compact('node'));
+	}
 	
 	public function breadcrumbAction() {
 		$node = $this->getManager('Fuga:Common:Page')->getCurrentNode();

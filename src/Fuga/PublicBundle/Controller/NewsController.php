@@ -15,5 +15,12 @@ class NewsController extends PublicController {
 		
 		return $this->get('templating')->render('news/newsline.tpl', compact('items'));
 	}
+
+	public function feedAction()
+	{
+		$items = $this->get('container')->getItems('news_news', 'publish=1');
+
+		return $this->get('templating')->render('news/feed.tpl', compact('items'));
+	}
 	
 }

@@ -162,6 +162,9 @@ class Router {
 	}
 	
 	public function getParam($name) {
+		if (!isset($this->params[$name])) {
+			throw new NotFoundHttpException('Parameter '.$name.' is not set');
+		}
 		return $this->params[$name]; 
 	}
 	

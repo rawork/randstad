@@ -1,7 +1,7 @@
 (function($) {
     $(function() {
 
-        $(document).on('click', '.news a', function(e){
+        $(document).on('click', '.news dd>a', function(e){
             e.preventDefault();
 
             console.log('news click');

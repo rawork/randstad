@@ -3,6 +3,14 @@ body {
     font-weight: 300;
 }
 
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+}
+
 h2 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -19,13 +27,13 @@ img {
 }
 
 a:hover {
-    color: #bd9830;
+    color: #bb942d;
 }
 
 a.file {
     display: block;
     margin: 0;
-    color: #bd9830;
+    color: #bb942d;
     text-decoration: underline;
     line-height: 22px;
     background-image: url('../img/icon_pdf.png');
@@ -45,11 +53,11 @@ a.file {
 }
 
 .golden {
-    color: #bd9830;
+    color: #bb942d;
 }
 
 .golden-bg {
-    background-color: #bd9830;
+    background-color: #bb942d;
 }
 
 .gray-bg {
@@ -88,12 +96,12 @@ ul.buttons li.menu {
 }
 
 ul.buttons li.active a {
-    color: #bd9830;
+    color: #bb942d;
 }
 
 ul.buttons li.menu .menu-icon {
     display: block;
-    border: 1px solid #bd9830;
+    border: 1px solid #bb942d;
     width: 33px;
     height: 33px;
     background-color: #fff;
@@ -224,8 +232,8 @@ ul.reports>li>a {
     font-size: 30px;
     display: block;
     padding: 10px 20px 15px;
-    color: #bd9830;
-    border: 1px solid #bd9830;
+    color: #bb942d;
+    border: 1px solid #bb942d;
     border-radius: 5px;
     box-shadow: 3px 3px 6px rgba(127, 127, 127, .5);
     margin-bottom: 25px;
@@ -244,7 +252,7 @@ ul.reports>li>a>div {
 }
 
 .news a {
-    color: #bd9830;
+    color: #bb942d;
 }
 
 .news dt span {
@@ -257,7 +265,7 @@ ul.reports>li>a>div {
 
 .news .text span {
     display: block;
-    border-top: 1px solid #bd9830;
+    border-top: 1px solid #bb942d;
     margin-top: 10px;
 
 }
@@ -270,7 +278,7 @@ ul.reports>li>a>div {
     height: 0;
     width: 0;
     border: 0;
-    border-bottom: 6px solid #bd9830;
+    border-bottom: 6px solid #bb942d;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     cursor: pointer;
@@ -278,12 +286,12 @@ ul.reports>li>a>div {
 
 .winner-main {
     padding-bottom: 30px;
-    border-bottom: 1px solid #bd9830;
+    border-bottom: 1px solid #bb942d;
     margin-bottom: 25px;
 }
 
 .winner-main .title {
-    color: #bd9830;
+    color: #bb942d;
     text-align: center;
     font-size: 16px;
 }
@@ -349,7 +357,7 @@ ul.reports>li>a>div {
 }
 
 .winner-other .title {
-    color: #bd9830;
+    color: #bb942d;
     text-align: center;
     font-size: 16px;
     height: 75px;
@@ -434,7 +442,7 @@ ul.mobile-mainmenu {
 }
 
 ul.mobile-mainmenu a {
-    color: #bd9830;
+    color: #bb942d;
 }
 
 ul.mobile-mainmenu li ul {
@@ -446,7 +454,7 @@ ul.mobile-mainmenu li ul {
 
 #mobile-menu .btn-contact {
     display: inline-block;
-    border: 1px solid #bd9830;
+    border: 1px solid #bb942d;
     width: 33px;
     height: 33px;
     background-color: #fff;
@@ -460,7 +468,7 @@ ul.mobile-mainmenu li ul {
 
 #mobile-menu .btn-register {
     display: inline-block;
-    border: 1px solid #bd9830;
+    border: 1px solid #bb942d;
     width: 33px;
     height: 33px;
     background-color: #fff;
@@ -489,8 +497,8 @@ ul.mobile-mainmenu li ul {
     margin-right: 10px;
 }
 
-.content-report a {
-    color: #bd9830;
+.content a {
+    color: #bb942d;
 }
 
 dl {
@@ -502,8 +510,8 @@ dl {
 }
 
 .btn-archive {
-    border: 1px solid #bd9830;
-    background: #bd9830;
+    border: 1px solid #bb942d;
+    background: #bb942d;
     padding: 7px 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -512,6 +520,63 @@ dl {
 
 .btn-archive:hover {
     color: #333;
+}
+
+.gold {
+    background-color: #bb942d;
+}
+
+h1 small {
+    font-weight: normal;
+    font-size: 65%;
+    display: block;
+}
+
+.btn {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn small {
+    display: block;
+
+}
+
+a.btn-warning {
+    text-decoration: none;
+}
+
+.btn-warning, a.btn-warning {
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #bb942d;
+    background-image: none;
+    border-color: #bb942d;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+    color: #000;
+    background-color: #bb942d;
+}
+
+#guest-template {
+    display: none;
+}
+
+a.add {
+    display: block;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+}
+
+.eng2 {
+    color: #eee;
+}
+
+.eng {
+    color: #999;
 }
 
 @media (min-width: 400px) {
@@ -742,11 +807,11 @@ dl {
         margin: 4px 0;
         overflow: hidden;
         background-color: transparent;
-        border-bottom: 1px dotted #bd9830;
+        border-bottom: 1px dotted #bb942d;
     }
 
     .dropdown-menu > li > a {
-        color: #bd9830;
+        color: #bb942d;
     }
 
     .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {

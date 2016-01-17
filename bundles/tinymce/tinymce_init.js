@@ -6,6 +6,7 @@ tinymce.init({
 	forced_root_block : '',
 	file_browser_callback : 'fileBrowserCallBack',
 	plugins : "advlist anchor contextmenu directionality fullscreen image layer link lists media nonbreaking noneditable pagebreak paste preview responsivefilemanager save searchreplace table template textcolor visualblocks visualchars",
+	extended_valid_elements: 'span',
 	relative_urls : false,
 	convert_urls : false,
 	paste_use_dialog : false,
