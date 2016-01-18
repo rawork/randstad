@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/bootstrap3/css/bootstrap.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick-theme.css" media="screen">
+    <link type="text/css" rel="stylesheet" href="{$theme_ref}/fotorama/fotorama.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2016/css/app.css?2016011801" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2016/css/_slider.css" media="screen">
     <!--[if lt IE 9]>
