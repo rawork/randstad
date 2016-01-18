@@ -127,6 +127,7 @@ ul.partners li {
 .mainmenu {
     height: 27px;
     font-size: 16px;
+    line-height: 21px;
 }
 
 .mainmenu a {
@@ -835,13 +836,18 @@ a.top {
         background-color: #ae8d2d;
     }
 
+    .nav-pills {
+        height: 38px !important;
+        /*overflow: hidden;*/
+    }
+
     .dropdown-menu {
         border-radius: 0;
         margin-top: 0;
         background-color: rgba(0,0,0,0.05);
 
         border: 0;
-        min-width: 116px;
+        min-width: 114px;
         box-shadow: none;
     }
 
