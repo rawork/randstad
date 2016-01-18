@@ -14,6 +14,12 @@
 
         });
 
+        $(document).on('click', 'a.top', function(e){
+            e.preventDefault();
+
+            $.scrollTo('.header', 1000);
+        });
+
         $(document).on('click', '.attention a', function(e){
             e.preventDefault();
 

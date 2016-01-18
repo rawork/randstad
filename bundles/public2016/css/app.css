@@ -605,6 +605,21 @@ form.register {
     margin-bottom: 30px;
 }
 
+a.top {
+    position: fixed;
+    display: block;
+    border: 1px solid #bd9830;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 3px;
+    width: 34px;
+    height: 32px;
+    text-align: center;
+    right: 20px;
+    bottom: 56px;
+    color: #bd9830;
+}
+
 @media (min-width: 400px) {
     .winner-main .goblet img {
         max-width: 110px !important;

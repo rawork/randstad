@@ -55,7 +55,6 @@
         <div class="container">
             <div class="content content-about">
                 {raMethod path="Fuga:Public:Common:page" args="['name':'about']"}
-
             </div>
         </div>
         <div class="gray-bg">
@@ -97,8 +96,10 @@
             <div class="container ">{raMethod path="Fuga:Public:Common:block" args="['name':'footer']"}</div>
         </div>
         {include file="menu/mobilemenu.tpl"}
+        {*<a href="#" class="top" title="Перейти в начало страницы"><span class="glyphicon glyphicon-arrow-up"></span></a>*}
     <script src="{$theme_ref}/jquery/jquery.js"></script>
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
+        <script src="{$theme_ref}/scrollto/jquery.scrollTo.js"></script>
     <script src="{$theme_ref}/slick/slick.min.js"></script>
     <script src="{$theme_ref}/public2016/js/app.js"></script>
 </body>
