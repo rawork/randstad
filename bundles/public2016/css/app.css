@@ -583,7 +583,7 @@ a.add {
     display: none;
     color: #fff;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 #attention-rus {
@@ -594,6 +594,8 @@ a.add {
     color: #fff;
     display: inline-block;
     border-bottom: 1px dashed #fff;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .content .attention a:hover, .content .attention a:active {
