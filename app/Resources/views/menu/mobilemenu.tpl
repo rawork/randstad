@@ -22,7 +22,7 @@
                     </ul>
                 </li>
             {else}
-                <li><a href="{if $menuitem.url}{$menuitem.url}{else}/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
+                <li><a href="{if $menuitem.url}{$menuitem.url}{else}/award/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
             {/if}
         {/foreach}
     </ul>
