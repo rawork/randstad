@@ -3,7 +3,7 @@
 <ul class="reports clearfix">
     {foreach from=$items item=report}
         <li>
-            <a target="_blank" href="{$report.file_value.value}">
+            <a target="_blank" href="{$report.file_value}">
                 {$report.name}
                 <div>{$report.description}</div>
             </a>
