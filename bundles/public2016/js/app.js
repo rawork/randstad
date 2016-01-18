@@ -28,6 +28,8 @@
         });
 
         $(document).on('click', '.news .text span a', function(e) {
+            e.preventDefault();
+
             $(this).parents('.text').slideUp(500);
         });
 
