@@ -1,6 +1,7 @@
 {foreach from=$items item=item}
 <br/><br/>
 <h4>{$item.name}</h4>
+     {if $item.description}<p>{$item.description}</p>{/if}
 <div class="fotorama"
      data-auto="true"
      id="slideshow{$item.id}"
