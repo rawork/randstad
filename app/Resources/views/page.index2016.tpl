@@ -101,6 +101,6 @@
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
         <script src="{$theme_ref}/scrollto/jquery.scrollTo.js"></script>
     <script src="{$theme_ref}/slick/slick.min.js"></script>
-    <script src="{$theme_ref}/public2016/js/app.js?2016011801"></script>
+    <script src="{$theme_ref}/public2016/js/app.js?2016011901"></script>
 </body>
 </html>
