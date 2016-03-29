@@ -628,6 +628,42 @@ a.top {
     color: #bd9830;
 }
 
+a.info-partners-teaser {
+    display: block;
+    background-color: #bd9830;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+a.info-partners-teaser:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+ul.info-partners {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.info-partners li {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+}
+
+ul.info-partners li img {
+    max-width: 100% !important;
+    vertical-align: middle;
+}
+
 @media (min-width: 400px) {
     .winner-main .goblet img {
         max-width: 110px !important;
@@ -646,6 +682,17 @@ a.top {
     .countries ul.list img {
         max-width: 32px !important;
         margin-right: 12px;
+    }
+
+    ul.info-partners li {
+        display: block;
+        margin: 0;
+        width: 50%;
+        text-align: center;
+        padding: 30px;
+        height: 120px;
+        line-height: 100px;
+        float: left;
     }
 }
 
@@ -733,6 +780,10 @@ a.top {
         display: block;
         margin-top: 0;
     }
+
+    ul.info-partners li {
+        width: 33.3333%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -772,6 +823,20 @@ a.top {
 
     .winner-main .title {
         height: auto;
+    }
+
+    a.info-partners-teaser {
+        display: block;
+        float: right;
+        margin-top: 3px;
+        margin-bottom: 0;
+        padding: 7px 20px;
+        font-size: 15px;
+        width: 200px;
+    }
+
+    ul.info-partners li {
+        width: 25%;
     }
 
 }
@@ -920,6 +985,11 @@ a.top {
     .winner-other .title {
         height: 75px;
     }
+
+    ul.info-partners li {
+        width: 20%;
+    }
+
 }
 
 @media (min-width: 1200px) {
