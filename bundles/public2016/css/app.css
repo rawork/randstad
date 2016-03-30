@@ -664,6 +664,17 @@ ul.info-partners li img {
     vertical-align: middle;
 }
 
+ul.info-partners li {
+    display: block;
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    height: 120px;
+    line-height: 100px;
+    float: left;
+}
+
 @media (min-width: 400px) {
     .winner-main .goblet img {
         max-width: 110px !important;
@@ -684,16 +695,7 @@ ul.info-partners li img {
         margin-right: 12px;
     }
 
-    ul.info-partners li {
-        display: block;
-        margin: 0;
-        width: 50%;
-        text-align: center;
-        padding: 30px;
-        height: 120px;
-        line-height: 100px;
-        float: left;
-    }
+
 }
 
 @media (min-width: 600px) {
