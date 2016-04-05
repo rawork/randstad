@@ -104,6 +104,56 @@
             <div class="container ">{raMethod path="Fuga:Public:Common:block" args="['name':'footer']"}</div>
         </div>
         {include file="menu/mobilemenu.tpl"}
+        <div class="modal fade" id="modal-pryanishnikov" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    {*<div class="modal-header">*}
+
+                        {*<h4 class="modal-title" id="myModalLabel">Modal title</h4>*}
+                    {*</div>*}
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img class="modal-img" src="/award/bundles/public2016/img/pryanishnikov.jpg">
+                        <p><strong>Николай Прянишников</strong> - на пост генерального директора РФГ (сеть спортивных клубов World Class) заступил 3 сентября 2015 г. В задачи Николая Прянишникова входит развитие бизнеса РФГ в России и за рубежом.</p>
+
+                        <p>Николай Прянишников имеет три высших образования: в 1994 г. он окончил Московский автомобильно-дорожный институт (МАДИ), в 1996 г. – Всероссийский заочный финансово-экономический институт по специальности «Финансы и кредит», в 1998 г. Высшую коммерческую школу Министерства внешних экономических связей и торговли РФ и Международный университет управления (Париж) по программе MBA. Защитил ученую степень кандидата экономических наук в Высшей школе приватизации и предпринимательства.</p>
+
+                        <p><strong>World Class</strong></p>
+
+                        <p>Сеть фитнес-клубов World Class — лидер индустрии в сегментах «люкс» и «премиум» и входит в список 25 лучших клубов мира по рейтингу IHRSA, Международной ассоциации оздоровительных и спортивных клубов. World Class — выбор лучших: среди членов сети — олимпийские чемпионы, звёзды спорта и шоу-бизнеса, известные политики и успешные бизнесмены.</p>
+
+                        <p>На сегодняшний день World Class является крупнейшей фитнес-корпорацией в России, которая оперирует 36 собственными и 36 франчайзинговыми клубами в 23 городах России и Казахстана. Сеть World Class является лидером по оказанию фитнес-услуг в сегментах «люкс» и «премиум».</p>
+                    </div>
+                    {*<div class="modal-footer">*}
+                        {*<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*}
+                        {*<button type="button" class="btn btn-primary">Save changes</button>*}
+                    {*</div>*}
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-broek" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    {*<div class="modal-header">*}
+
+                    {*<h4 class="modal-title" id="myModalLabel">Modal title</h4>*}
+                    {*</div>*}
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img class="modal-img" src="/award/bundles/public2016/img/broek.jpg">
+                        <p><strong>Жак ван ден Брок</strong> в марте 2014 года получил пост главы Randstad Holding nv и председателя Совета директоров. На посту главы Randstad отвечает за операционную деятельность компаний в Германии, Австралии, Новой Зеландии, Китае, Гонконге, Сингапуре и Малайзии, а также за развитие бизнеса, управление персоналом, маркетинг, коммуникации и связи с общественностью в масштабе всей корпорации.</p>
+
+                        <p>В Randstad пришел в 1988 году на позицию руководителя филиала. С тех пор занимал разные управленческие позиции в холдинге, в том числе побывал региональным директором Randstad в Нидерландах и директором по маркетингу в Европе. В январе 2004 Жак ван ден Брок вошел в Совет директоров Randstad Holding nv.</p>
+                    </div>
+                    {*<div class="modal-footer">*}
+                    {*<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>*}
+                    {*<button type="button" class="btn btn-primary">Save changes</button>*}
+                    {*</div>*}
+                </div>
+            </div>
+        </div>
+
         {*<a href="#" class="top" title="Перейти в начало страницы"><span class="glyphicon glyphicon-arrow-up"></span></a>*}
     <script src="{$theme_ref}/jquery/jquery.js"></script>
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
