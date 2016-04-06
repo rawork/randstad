@@ -678,7 +678,7 @@ ul.info-partners li {
 img.modal-img {
     float: left;
     margin: 0 30px 10px 0;
-    max-width: 200px !important;
+    max-width: 150px !important;
 }
 
 .modal-content {
@@ -687,6 +687,10 @@ img.modal-img {
 
 .modal-body {
     padding: 40px;
+}
+
+.modal h4 {
+    margin-bottom: 20px;
 }
 
 .close {
@@ -716,6 +720,9 @@ img.modal-img {
         margin-right: 12px;
     }
 
+    img.modal-img {
+        max-width: 200px !important;
+    }
 
 }
 
