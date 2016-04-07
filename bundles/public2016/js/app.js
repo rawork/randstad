@@ -210,6 +210,12 @@
 
             // Kick off one resize to fix all videos on page load
         }).resize();
+
+        console.log(window.location.hash);
+        if (window.location.hash) {
+            console.log('do hash');
+            $(window.location.hash).modal('show')
+        }
     });
 
 })(jQuery);
