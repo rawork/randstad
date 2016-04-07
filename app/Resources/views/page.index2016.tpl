@@ -161,7 +161,7 @@
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
         <script src="{$theme_ref}/scrollto/jquery.scrollTo.js"></script>
     <script src="{$theme_ref}/slick/slick.min.js"></script>
-    <script src="{$theme_ref}/public2016/js/app.js?2016011901"></script>
+    <script src="{$theme_ref}/public2016/js/app.js?2016040701"></script>
         {literal}
             <script>
                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
