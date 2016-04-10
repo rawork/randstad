@@ -718,6 +718,10 @@ img.modal-img {
     .winner-main .goblet img {
         max-width: 110px !important;
     }
+
+    .winner-main .goblet-extra img {
+        margin-top: 40px;
+    }
 }
 
 @media (min-width: 480px) {
@@ -806,6 +810,10 @@ img.modal-img {
         max-width: 120px !important;
     }
 
+    .winner-main .goblet-extra img {
+        margin-top: 45px;
+    }
+
     .winner-main .winner {
         float: right;
         width: 75%;
@@ -859,6 +867,10 @@ img.modal-img {
 
     .winner-main .goblet img {
         max-width: 125px !important;
+    }
+
+    .winner-main .goblet-extra img {
+        margin-top: 50px;
     }
 
     .winner-main .winner {
@@ -1019,6 +1031,11 @@ img.modal-img {
 
     .winner-main .goblet img {
         max-width: 175px !important;
+
+    }
+
+    .winner-main .goblet-extra img {
+        margin-top: 70px;
     }
 
     .winner-main .title {
