@@ -379,7 +379,7 @@ ul.reports>li>a>div {
     color: #bb942d;
     text-align: center;
     font-size: 16px;
-    height: 125px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -1027,7 +1027,7 @@ img.modal-img {
     }
 
     .winner-other .title {
-        height: 125px;
+        height: 100px;
     }
 
     ul.info-partners li {
