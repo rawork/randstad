@@ -8,8 +8,8 @@
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/bootstrap3/css/bootstrap.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick-theme.css" media="screen">
-    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2016/css/app.css?2016011802" media="screen">
-    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2016/css/_slider.css?201601180" media="screen">
+    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2016/css/app.css?2016041001" media="screen">
+    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2016/css/_slider.css?2016041001" media="screen">
     <!--[if lt IE 9]>
     {*<script type="text/javascript" src="{$theme_ref}/ie/html5shiv.js"></script>*}
     <script type="text/javascript" src="{$theme_ref}/ie/respond.min.js"></script>
@@ -162,7 +162,7 @@
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
         <script src="{$theme_ref}/scrollto/jquery.scrollTo.js"></script>
     <script src="{$theme_ref}/slick/slick.min.js"></script>
-    <script src="{$theme_ref}/public2016/js/app.js?2016040701"></script>
+    <script src="{$theme_ref}/public2016/js/app.js?2016041001"></script>
         {literal}
             <script>
                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
