@@ -2,7 +2,7 @@
 <div class="winner-main clearfix">
     <div class="goblet"><img src="{$theme_ref}/public2016/img/goblet.png"></div>
     <div class="winner">
-        <div class="title"><span>{$winner.nomination}:</span> {$winner.industry} — <strong>{$winner.name}</strong></div>
+        <div class="title"><span>{$winner.nomination}</span> {$winner.industry}&nbsp;— <strong>{$winner.name}</strong></div>
         <ul class="photo clearfix">
             <li class="certificate">
                 <div class="goblet-xs"><img src="{$theme_ref}/public2016/img/goblet.png"></div>

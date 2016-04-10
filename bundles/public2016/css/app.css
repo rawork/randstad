@@ -330,6 +330,10 @@ ul.reports>li>a>div {
     margin-top: 20px;
 }
 
+.winner-main img.ramka {
+    border: 1px solid #f1f1f1;
+}
+
 .winner-main ul li.certificate .goblet-xs {
     position: absolute;
     max-width: 45% !important;
@@ -366,7 +370,7 @@ ul.reports>li>a>div {
     color: #bb942d;
     text-align: center;
     font-size: 16px;
-    height: 75px;
+    height: 125px;
     overflow: hidden;
 }
 
@@ -375,6 +379,7 @@ ul.reports>li>a>div {
     margin: 0 auto;
     margin-bottom: 20px;
     width: 203px;
+    border: 1px solid #f1f1f1;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -767,7 +772,7 @@ img.modal-img {
     }
 
     .winner-main .title span {
-        display: inline;
+        display: block;
     }
 
     .winner-main ul li {
@@ -1013,7 +1018,7 @@ img.modal-img {
     }
 
     .winner-other .title {
-        height: 75px;
+        height: 125px;
     }
 
     ul.info-partners li {

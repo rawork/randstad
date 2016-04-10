@@ -213,7 +213,7 @@
 
         console.log(window.location.hash);
         if (window.location.hash) {
-            console.log('do hash');
+            //console.log('do hash');
             $(window.location.hash).modal('show')
         }
     });

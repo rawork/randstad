@@ -85,6 +85,7 @@
                 <h2><a name="winners"></a>Победители</h2>
                 {raMethod path="Fuga:Public:Winner:main"}
                 {raMethod path="Fuga:Public:Winner:other"}
+                {raMethod path="Fuga:Public:Winner:extra"}
             </div>
         </div>
         <div class="gray-bg">
