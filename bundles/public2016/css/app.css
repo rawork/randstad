@@ -22,12 +22,21 @@ a, a.active, a:visited {
     color: #231f20;
 }
 
+a.disabled {
+    color: #ccc;
+}
+
 img {
     max-width: 100% !important;
 }
 
 a:hover {
     color: #bb942d;
+}
+
+a:hover.disabled {
+    color: #ccc;
+    text-decoration: none;
 }
 
 a.file {
