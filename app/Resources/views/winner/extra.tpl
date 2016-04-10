@@ -1,5 +1,6 @@
+<p class="winner-extra">Специальный приз</p>
 {foreach from=$items item=winner}
-<div class="winner-main clearfix">
+<div class="winner-main extra clearfix">
     <div class="goblet goblet-extra"><img src="{$theme_ref}/public2016/img/prize3.png"></div>
     <div class="winner">
         <div class="title"><span>{$winner.nomination}</span> {$winner.industry}&nbsp;— <strong>{$winner.name}</strong></div>

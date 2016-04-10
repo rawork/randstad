@@ -305,6 +305,16 @@ ul.reports>li>a>div {
     margin-bottom: 25px;
 }
 
+.winner-main.extra {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.winner-extra {
+    border-top: 1px solid #bb942d;
+    padding-top: 25px;
+}
+
 .winner-main .title {
     color: #bb942d;
     text-align: center;
