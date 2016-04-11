@@ -346,7 +346,7 @@ ul.reports>li>a>div {
 .winner-main ul li.certificate img {
     max-width: 70% !important;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 .winner-main img.ramka {
