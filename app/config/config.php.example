@@ -1,7 +1,7 @@
 <?php
 
 define('PRJ_REF', '');
-define('PRJ_DIR', $_SERVER['DOCUMENT_ROOT'].PRJ_REF);
+define('PRJ_DIR', (php_sapi_name() != 'cli' ? $_SERVER['DOCUMENT_ROOT'] : getcwd()).PRJ_REF);
 
 define('RES_REF', PRJ_REF.'/files');
 define('RES_DIR', PRJ_DIR.'/files');

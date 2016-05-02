@@ -18,17 +18,7 @@ use Doctrine\DBAL\Types\Type;
 
 Type::addType('money', 'Fuga\Component\DBAL\Types\MoneyType');
 
-$se_mask = "/(Yandex|Googlebot|StackRambler|Yahoo Slurp|WebAlta|msnbot)/";
-if (preg_match($se_mask,$_SERVER['HTTP_USER_AGENT']) > 0) {
-	if (!empty($_GET[session_name()])) {
-		header($_SERVER['SERVER_PROTOCOL']." 404 Not Found");
-		exit();
-	}
-} else {
-	session_start();
-}
-
-function exception_handler($exception) 
+function exception_handler($exception)
 {	
 	$statusCode = $exception instanceof \Fuga\Component\Exception\NotFoundHttpException
 			? $exception->getStatusCode() 
@@ -44,40 +34,53 @@ if ($_SERVER['SCRIPT_NAME'] != '/restore.php' && file_exists('/../restore.php'))
 	throw new \Exception('Удалите файл restore.php в корне сайта');
 }
 
-// ID запрашиваемой страницы
-$GLOBALS['cur_page_id'] = preg_replace('/(\/|-|\.|:|\?|[|])/', '_', str_replace('?'.$_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI']));
-
 //Registry::init('app/config/parameters.yml');
 
 $container = new Container($loader);
 
-// инициализация переменных
-$params = array();
-$sql = 'SELECT name, value FROM config_variable';
-$stmt = $container->get('connection')->prepare($sql);
-$stmt->execute();
-$vars = $stmt->fetchAll();
-foreach ($vars as $var) {
-	$params[strtolower($var['name'])] = $var['value'];
-	define($var['name'], $var['value']);
-}
-$params['prj_ref'] = PRJ_REF;
-$params['theme_ref'] = THEME_REF;
-$container->get('templating')->assign($params);
-// Включаем Роутер запросов
-$container->get('router')->setLocale();
-$container->get('router')->setParams();
+if (php_sapi_name() != 'cli'){
+	// ID запрашиваемой страницы
+	$GLOBALS['cur_page_id'] = preg_replace('/(\/|-|\.|:|\?|[|])/', '_', str_replace('?'.$_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI']));
 
-if (!$container->get('security')->isAuthenticated() && $container->get('security')->isSecuredArea()) {
-	$controller = new SecurityController();
-	echo $controller->loginAction();
-	exit;
-} elseif (preg_match('/^\\'.PRJ_REF.'\/admin\/(logout|forget|password)/', $_SERVER['REQUEST_URI'], $matches)) {
-	$controller = new SecurityController();
-	$methodName = $matches[1].'Action';
-	echo $controller->$methodName();
-	exit;
+	$se_mask = "/(Yandex|Googlebot|StackRambler|Yahoo Slurp|WebAlta|msnbot)/";
+	if (preg_match($se_mask,$_SERVER['HTTP_USER_AGENT']) > 0) {
+		if (!empty($_GET[session_name()])) {
+			header($_SERVER['SERVER_PROTOCOL']." 404 Not Found");
+			exit();
+		}
+	} else {
+		session_start();
+	}
+
+	// инициализация переменных
+	$params = array();
+	$sql = 'SELECT name, value FROM config_variable';
+	$stmt = $container->get('connection')->prepare($sql);
+	$stmt->execute();
+	$vars = $stmt->fetchAll();
+	foreach ($vars as $var) {
+		$params[strtolower($var['name'])] = $var['value'];
+		define($var['name'], $var['value']);
+	}
+	$params['prj_ref'] = PRJ_REF;
+	$params['theme_ref'] = THEME_REF;
+	$container->get('templating')->assign($params);
+// Включаем Роутер запросов
+	$container->get('router')->setLocale();
+	$container->get('router')->setParams();
+
+	if (!$container->get('security')->isAuthenticated() && $container->get('security')->isSecuredArea()) {
+		$controller = new SecurityController();
+		echo $controller->loginAction();
+		exit;
+	} elseif (preg_match('/^\\'.PRJ_REF.'\/admin\/(logout|forget|password)/', $_SERVER['REQUEST_URI'], $matches)) {
+		$controller = new SecurityController();
+		$methodName = $matches[1].'Action';
+		echo $controller->$methodName();
+		exit;
+	}
 }
+
 
 // TODO убрать инициализацию всех таблиц 
 $container->initialize();
