@@ -1,3 +1,4 @@
+<p>Если вы хотите получить фото, которое вам понравилось, в высоком разрешении, пришлите название файла на электронный адрес <a href="award@ancor.ru">award@ancor.ru</a>.</p>
 {foreach from=$items item=item}
 <br/><br/>
 <h4>{$item.name}</h4>
@@ -23,7 +24,7 @@ data-loop="true"
 data-fit="contain"
 >
 {foreach from=$item.fotos item=foto}
-<a href="{$foto.foto_medium}" data-full="{$foto.foto_big}"><img src="{$foto.foto_small}" alt="{$item.name}"></a>
+<a href="{$foto.foto_medium}" data-full="{$foto.foto_big}" data-caption="{$foto.name}"><img src="{$foto.foto_small}" alt="{$foto.name}"></a>
 {/foreach}
 </div>
 <a href="{$item.fotos[0].foto_big}" id="download{$item.id}" target="_blank">Скачать текущее фото</a>
