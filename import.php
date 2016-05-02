@@ -50,7 +50,7 @@ foreach ($files as $file) {
 			'created' => date('Y-m-d H:i:s')
 		));
 		echo ' uploaded'."\n";
-		exit;
+//		exit;
 	}
 }
 
