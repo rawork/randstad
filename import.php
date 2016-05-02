@@ -22,6 +22,8 @@ $files = scandir($folder.'/');
 
 $i = 0;
 
+$container->get('imagestorage')->setOptions(array('sizes' => 'small|100x75,medium|800x600,big|1500x1000'));
+
 foreach ($files as $file) {
 
 	if (is_file(getcwd().'/'.$folder.'/'.$file) && preg_match('/\.jpg$/i', $file)) {
