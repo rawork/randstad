@@ -45,11 +45,11 @@
 }
 
 #slide1 {
-    background-image: url('../img/slider/slide1_xs.jpg');
+    background-image: url('../img/slider/slide1_2_xs.jpg');
 }
 
 #slide2 {
-    background-image: url('../img/slider/slide2_xs.jpg');
+    background-image: url('../img/slider/slide2_2_xs.jpg');
 }
 
 #slide3 {
@@ -74,11 +74,11 @@
     }
 
     #slide1 {
-        background-image: url('../img/slider/slide1_sm.jpg');
+        background-image: url('../img/slider/slide1_2_sm.jpg');
     }
 
     #slide2 {
-        background-image: url('../img/slider/slide2_sm.jpg');
+        background-image: url('../img/slider/slide2_2_sm.jpg');
     }
 
     #slide3 {
@@ -117,11 +117,11 @@
     }
 
     #slide1 {
-        background-image: url('../img/slider/slide1_md.jpg');
+        background-image: url('../img/slider/slide1_2_md.jpg');
     }
 
     #slide2 {
-        background-image: url('../img/slider/slide2_md.jpg');
+        background-image: url('../img/slider/slide2_2_md.jpg');
     }
 
     #slide3 {
@@ -165,11 +165,11 @@
     }
 
     #slide1 {
-        background-image: url('../img/slider/slide1_lg.jpg');
+        background-image: url('../img/slider/slide1_2_lg.jpg');
     }
 
     #slide2 {
-        background-image: url('../img/slider/slide2_lg.jpg');
+        background-image: url('../img/slider/slide2_2_lg.jpg');
     }
 
     #slide3 {
