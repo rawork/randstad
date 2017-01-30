@@ -47,7 +47,7 @@
             </div>
         <div class="container">
             <div class="award-announce">
-                <a href="#partners" class="info-partners-teaser">Информационные партнеры</a>
+                {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
                 <img class="pull-left" src="{$theme_ref}/public2016/img/goldglobe.png">
                 <div>{raMethod path="Fuga:Public:Common:block" args="['name':'tiser']"}</div>
                 {*<a href="#partners" class="info-partners-teaser">Информационные партнеры</a>*}
@@ -95,12 +95,12 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="content content-partners">
-                <h2><a name="partners"></a>Информационные партнеры</h2>
-                {raMethod path="Fuga:Public:Partner:index"}
-            </div>
-        </div>
+        {*<div class="container">*}
+            {*<div class="content content-partners">*}
+                {*<h2><a name="partners"></a>Информационные партнеры</h2>*}
+                {*{raMethod path="Fuga:Public:Partner:index"}*}
+            {*</div>*}
+        {*</div>*}
         <div class="golden-bg footer">
             <div class="container ">{raMethod path="Fuga:Public:Common:block" args="['name':'footer']"}</div>
         </div>
