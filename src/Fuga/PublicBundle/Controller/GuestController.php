@@ -73,7 +73,7 @@ class GuestController extends PublicController {
 
 			return $this->render('guest/message.tpl');
 		} else {
-			$this->get('container')->setVar('h1', 'Регистрация на церемонию вручения премии Randstad Award<small>Registeration at the Randstad Award ceremony</small>');
+			$this->get('container')->setVar('h1', 'Регистрация на церемонию вручения премии Randstad Award<small>Registration at the Randstad Award ceremony</small>');
 
 			return $this->render('guest/index.tpl');
 		}
