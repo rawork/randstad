@@ -18,7 +18,6 @@
 <tr>
 	<td align="left" width="100">{$field.title}</td>
 	<td>
-        {$field.name}
 		{$field.searchinput}
 	</td>
 </tr>
