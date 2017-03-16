@@ -50,7 +50,6 @@
                 {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
                 <img class="pull-left" src="{$theme_ref}/public2016/img/goldglobe.png">
                 <div>{raMethod path="Fuga:Public:Common:block" args="['name':'tiser']"}</div>
-                {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
             </div>
         </div>
         {raMethod path="Fuga:Public:Slide:index"}
