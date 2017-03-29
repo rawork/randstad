@@ -396,8 +396,12 @@ ul.reports>li>a>div {
     color: #bb942d;
     text-align: center;
     font-size: 16px;
-    height: 100px;
+    height: 135px;
     overflow: hidden;
+}
+
+.winner-other .title strong {
+    display: block;
 }
 
 .winner-other .winner>img {
@@ -447,6 +451,7 @@ ul.reports>li>a>div {
     float: right;
     max-width: 70% !important;
     width: 132px;
+    border: 1px solid #e0e0e0;
 }
 
 #mobile-menu {
@@ -836,6 +841,11 @@ img.modal-img {
         width: 75%;
     }
 
+    .winner-main .winner.winner-hall {
+        float: none;
+        width: 100%;
+    }
+
     .winner-main ul li:first-child {
         padding-left: 0;
     }
@@ -892,6 +902,11 @@ img.modal-img {
 
     .winner-main .winner {
         width: 75%;
+    }
+
+    .winner-main .winner.winner-hall {
+        float: none;
+        width: 100%;
     }
 
     .winner-main .title {
@@ -1061,7 +1076,7 @@ img.modal-img {
     }
 
     .winner-other .title {
-        height: 100px;
+        height: 135px;
     }
 
     ul.info-partners li {
