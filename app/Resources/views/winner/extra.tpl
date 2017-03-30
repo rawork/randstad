@@ -1,4 +1,5 @@
-<p class="winner-extra">Зал славы Randstad Award</p>
+<p class="winner-extra">Специальный приз</p>
+{*Зал славы Randstad Award*}
 {foreach from=$items item=winner}
 <div class="winner-main extra clearfix">
     <div class="winner winner-hall">
