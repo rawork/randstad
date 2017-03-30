@@ -5,7 +5,7 @@ namespace Fuga\CommonBundle\Model;
 use Fuga\Component\Form\FormBuilder;
 
 class FormManager extends ModelManager {
-	
+
 	private $params;
 	
 	public function __construct() {
@@ -15,7 +15,7 @@ class FormManager extends ModelManager {
 			$this->params[$param['name']] = $param['type'] == 'int' ? intval($param['value']) : $param['value'];
 		}
 	}
-	
+
 	public function getForm($name){
 		$form = $this->get('container')->getItem('form_form', "name='$name'");
 		if ($form) {
