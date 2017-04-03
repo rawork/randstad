@@ -1,3 +1,4 @@
+{if (count($items) > 0)}
 <p>&nbsp;</p>
 <p>Если вы хотите получить фото, которое вам понравилось, в высоком разрешении, пришлите название файла на электронный адрес <a href="award@ancor.ru">award@ancor.ru</a>.</p>
 {foreach from=$items item=item}
@@ -30,3 +31,4 @@ data-fit="contain"
 </div>
 <a href="{$item.fotos[0].foto_big}" id="download{$item.id}" target="_blank">Скачать текущее фото</a>
 {/foreach}
+{/if}
