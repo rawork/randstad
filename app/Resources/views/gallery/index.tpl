@@ -26,7 +26,7 @@ data-loop="true"
 data-fit="contain"
 >
 {foreach from=$item.fotos item=foto}
-<a href="{$foto.foto_medium}" data-full="{$foto.foto_big}" data-caption="{$foto.name}"><img src="{$foto.foto_small}" alt="{$foto.name}"></a>
+<a href="{$foto.foto_medium}" data-full="{$foto.foto_big}" data-caption="{$foto.name}" data-thumb="{$foto.foto_small}"></a>
 {/foreach}
 </div>
 <a href="{$item.fotos[0].foto_big}" id="download{$item.id}" target="_blank">Скачать текущее фото</a>
