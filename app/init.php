@@ -14,11 +14,11 @@ use Fuga\Component\Container;
 use Fuga\CommonBundle\Controller\SecurityController;
 use Doctrine\DBAL\Types\Type;
 
+Type::addType('money', '\Fuga\Component\DBAL\Types\MoneyType');
+
 $container = new Container($loader);
 
 if (php_sapi_name() != 'cli'){
-
-	Type::addType('money', 'Fuga\Component\DBAL\Types\MoneyType');
 
 	function exception_handler($exception)
 	{
