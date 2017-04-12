@@ -11,36 +11,37 @@ require_once 'config/config.php';
 $loader = require __DIR__.'/../vendor/autoload.php';
 
 use Fuga\Component\Container;
-use Fuga\Component\Registry;
-use Fuga\Component\Exception\AutoloadException;
 use Fuga\CommonBundle\Controller\SecurityController;
 use Doctrine\DBAL\Types\Type;
-
-Type::addType('money', 'Fuga\Component\DBAL\Types\MoneyType');
-
-function exception_handler($exception)
-{	
-	$statusCode = $exception instanceof \Fuga\Component\Exception\NotFoundHttpException
-			? $exception->getStatusCode() 
-			: 500;
-	$controller = new Fuga\CommonBundle\Controller\ExceptionController();
-	
-	echo $controller->indexAction($statusCode, $exception->getMessage());
-}
-
-set_exception_handler('exception_handler');
-
-if ($_SERVER['SCRIPT_NAME'] != '/restore.php' && file_exists('/../restore.php')) {
-	throw new \Exception('Удалите файл restore.php в корне сайта');
-}
-
-//Registry::init('app/config/parameters.yml');
 
 $container = new Container($loader);
 
 if (php_sapi_name() != 'cli'){
+
+	Type::addType('money', 'Fuga\Component\DBAL\Types\MoneyType');
+
+	function exception_handler($exception)
+	{
+		$statusCode = $exception instanceof \Fuga\Component\Exception\NotFoundHttpException
+			? $exception->getStatusCode()
+			: 500;
+		$controller = new Fuga\CommonBundle\Controller\ExceptionController();
+
+		echo $controller->indexAction($statusCode, $exception->getMessage());
+	}
+
+	set_exception_handler('exception_handler');
+
+	if ($_SERVER['SCRIPT_NAME'] != '/restore.php' && file_exists('/../restore.php')) {
+		throw new \Exception('Удалите файл restore.php в корне сайта');
+	}
+
 	// ID запрашиваемой страницы
-	$GLOBALS['cur_page_id'] = preg_replace('/(\/|-|\.|:|\?|[|])/', '_', str_replace('?'.$_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI']));
+	$GLOBALS['cur_page_id'] = preg_replace(
+		'/(\/|-|\.|:|\?|[|])/',
+		'_',
+		str_replace('?'.$_SERVER['QUERY_STRING'], '', $_SERVER['REQUEST_URI'])
+	);
 
 	$se_mask = "/(Yandex|Googlebot|StackRambler|Yahoo Slurp|WebAlta|msnbot)/";
 	if (preg_match($se_mask,$_SERVER['HTTP_USER_AGENT']) > 0) {
