@@ -19,7 +19,7 @@ class FileStorage implements StorageInterface {
 		} else {
 			$this->copy($createFileName, $sourcePath);
 		}
-		chmod($this->realPath($createFileName), 0666);
+		chmod($this->realPath($createFileName), 0644);
 		return $createFileName;
 	}
 	
@@ -43,7 +43,7 @@ class FileStorage implements StorageInterface {
 	private function createPath() {
 		$date = new \Datetime();
 		$path = $date->format('/Y/m/d/');
-		@mkdir($this->uploadpath.$path, 0777, true);
+		@mkdir($this->uploadpath.$path, 0755, true);
 		return $path;
 	}
 	

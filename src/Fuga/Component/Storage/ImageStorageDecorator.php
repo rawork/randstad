@@ -26,8 +26,8 @@ class ImageStorageDecorator implements StorageInterface {
 		return $this->options[$name];
 	}
 	
-	public function save($filename, $sorcePath) {
-		$createdFileName = $this->storageEngine->save($filename, $sorcePath);
+	public function save($filename, $sourcePath) {
+		$createdFileName = $this->storageEngine->save($filename, $sourcePath);
 		$this->afterSave($createdFileName);
 		return $createdFileName;
 	}

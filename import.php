@@ -27,9 +27,10 @@ $container->get('imagestorage')->setOptions(array('sizes' => 'small|100x75,mediu
 foreach ($files as $file) {
 
 	if (is_file(getcwd().'/'.$folder.'/'.$file) && preg_match('/\.jpg$/i', $file)) {
-		echo getcwd().'/'.$folder.'/'.$file."...";
+		echo getcwd().'/'.$folder.'/'.$file." -> \n";
 		$i++;
 		$filename = $container->get('imagestorage')->save($file, getcwd().'/'.$folder.'/'.$file);
+		echo $filename.'. ';
 		$name = $file;
 		$filesize = @filesize($container->get('imagestorage')->realPath($filename));
 		$mimetype = mime_content_type(getcwd().'/'.$folder.'/'.$file);
