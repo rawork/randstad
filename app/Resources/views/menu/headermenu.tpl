@@ -1,7 +1,7 @@
 <ul class="buttons pull-right">
     <li><a href="mailto:award@ancor.ru">Связаться с нами</a></li>
-    {*<li class="divider">|</li>*}
-    {*<li><a href="/award/guests">Станьте гостем церемонии</a></li>*}
+    <li class="divider">|</li>
+    <li><a href="/award/guests">Станьте гостем церемонии</a></li>
     <li class="menu"><span class="menu-icon"></span></li>
 </ul>
 <ul class="partners pull-right">
