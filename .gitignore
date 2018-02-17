@@ -38,3 +38,4 @@ app/backup/*
 composer.lock
 composer.phar
 vendor/*
+node_modules

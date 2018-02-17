@@ -1,0 +1,142 @@
+.header {
+  min-height: 90px;
+  background-image: url('../img/header_bg_xs.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  .logo {
+    width: 80%;
+
+    img {
+      display: block;
+      max-width: 100% !important;
+    }
+  }
+
+  ul.buttons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-top: 20px;
+
+    &>li.divider {
+      padding: 0 5px;
+      color: #666;
+    }
+
+    li {
+      float: left;
+      display: none;
+
+      &.menu {
+        display: block;
+
+        .menu-icon {
+          display: block;
+          border: 1px solid #fff;
+          width: 33px;
+          height: 33px;
+          background-color: transparent;
+          background-image: url('../img/icon_hamburger.svg');
+          background-size: 21px 21px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          cursor: pointer;
+        }
+      }
+
+      &.active a {
+        color: #006ead;
+      }
+    }
+  }
+
+  ul.partners {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+
+    li {
+      float: left;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+
+  ul.buttons {
+    margin-top: 13px;
+
+    li {
+      display: block;
+
+      .menu {
+        display: none;
+      }
+    }
+  }
+
+  ul.partners {
+    display: block;
+    margin-right: 80px;
+    margin-top: 44px;
+
+    & > li > a {
+      padding: 0 25px;
+    }
+  }
+
+  .mainmenu {
+    height: 38px;
+
+    .nav {
+      display: block;
+
+      & > li > a {
+        padding: 8px 19px;
+
+        &:hover, &:focus {
+          background-color: #ae8d2d;
+          border-radius: 0;
+        }
+      }
+
+      .open > a, .open > a:hover, .open > a:focus {
+        background-color: #ae8d2d;
+      }
+    }
+  }
+
+  .nav-pills {
+    height: 38px !important;
+  }
+
+  .dropdown-menu {
+    border-radius: 0;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    border: 0;
+    min-width: 114px;
+    box-shadow: none;
+
+    .divider {
+      height: 0;
+      margin: 4px 0;
+      overflow: hidden;
+      background-color: transparent;
+      border-bottom: 1px dotted #006ead;
+    }
+
+    & > li > a {
+      color: #006ead;
+
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}

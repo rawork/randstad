@@ -1,0 +1,278 @@
+body {
+  color: #231f20;
+  font-weight: 400;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+h2 {
+  color: #006ead;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+a, a:active, a.active, a:visited {
+  color: #231f20;
+}
+
+a.disabled {
+  color: #ccc;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+a:hover {
+  color: #006ead;
+}
+
+a:hover.disabled {
+  text-decoration: none;
+}
+
+a.file {
+  display: block;
+  margin: 0;
+  color: #006ead;
+  text-decoration: underline;
+  line-height: 22px;
+  background-image: url('../img/icon_pdf_blue.png');
+  background-size: 25px 25px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  min-height: 25px;
+}
+
+.content {
+  padding: 40px 0;
+}
+
+.content a {
+  color: #006ead;
+}
+
+.golden {
+  color: #006ead;
+}
+
+.menu-bg {
+  background-color: #f54d2e;
+}
+
+.gray-bg {
+  background-color: #cee0e5;
+}
+
+.slider{
+  margin: 40px 0;
+  background-color: #fff;
+}
+
+dl {
+  margin-bottom: 0;
+}
+
+.btn-archive {
+  border: 1px solid #006ead;
+  background: #006ead;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.btn-archive:hover {
+  color: #333;
+}
+
+.gold {
+  background-color: #006ead;
+}
+
+h1 small {
+  font-weight: normal;
+  font-size: 65%;
+  display: block;
+}
+
+.btn {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn small {
+  display: block;
+
+}
+
+a.btn-warning {
+  text-decoration: none;
+}
+
+.btn-warning, a.btn-warning {
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #006ead;
+  background-image: none;
+  border-color: #006ead;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+  color: #000;
+  background-color: #006ead;
+}
+
+#guest-template {
+  display: none;
+}
+
+a.add {
+  display: block;
+  cursor: pointer;
+  margin: 5px 0 15px 0;
+}
+
+.eng2 {
+  color: #eee;
+}
+
+.eng {
+  color: #999;
+}
+
+.attention {
+  display: none;
+  color: #006ead;
+  font-size: 16px;
+}
+
+#attention-rus {
+  display: block;
+}
+
+.content .attention a {
+  color: #006ead;
+  display: inline-block;
+  border-bottom: 1px dashed #006ead;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.content .attention a:hover, .content .attention a:active {
+  text-decoration: none;
+  border-bottom-color: transparent;
+}
+
+form.register {
+  margin-bottom: 30px;
+}
+
+a.top {
+  position: fixed;
+  display: block;
+  border: 1px solid #bd9830;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 3px;
+  width: 34px;
+  height: 32px;
+  text-align: center;
+  right: 20px;
+  bottom: 56px;
+  color: #bd9830;
+}
+
+a.info-partners-teaser {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #006ead;
+  border-radius: 5px;
+  color: #006ead;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  transition: all .2s ease-out;
+}
+
+a.info-partners-teaser:hover, a.info-partners-teaser:active {
+  color: #fff;
+  background-color: #006ead;
+  text-decoration: none;
+}
+
+img.modal-img {
+  float: left;
+  margin: 0 30px 10px 0;
+  max-width: 150px !important;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+.modal h4 {
+  margin-bottom: 20px;
+}
+
+.close {
+  font-size: 40px;
+  margin-top: -20px;
+  margin-right: -10px;
+}
+
+@media (min-width: 480px) {
+  img.modal-img {
+    max-width: 200px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .man-heart {
+    background-image: url('../img/man_heart.png');
+    background-position: 100% 30px;
+    background-repeat: no-repeat;
+    background-size: 232px 252px;
+    padding-right: 250px;
+
+  }
+
+  a.info-partners-teaser {
+    display: block;
+    float: right;
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding: 7px 20px;
+    font-size: 15px;
+    width: 200px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  .man-heart {
+    background-size: 402px 434px;
+    padding-right: 450px;
+  }
+}
