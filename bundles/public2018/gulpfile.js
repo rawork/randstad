@@ -11,7 +11,7 @@ gulp.task('styles', function() {
       browsers: ['> 1%', 'last 40 versions'],
       cascade: true
     }))
-    .pipe(cleanCSS())
+    //.pipe(cleanCSS())
     .pipe(gulp.dest('./css/'))
 });
 

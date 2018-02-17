@@ -5,7 +5,7 @@
   background-position: top center;
 
   .logo {
-    width: 80%;
+    width: 75%;
 
     img {
       display: block;
@@ -46,8 +46,8 @@
         }
       }
 
-      &.active a {
-        color: #006ead;
+      a {
+        color: #fff;
       }
     }
   }
@@ -61,81 +61,49 @@
 
     li {
       float: left;
+
+      a {
+        color: #fff;
+      }
     }
   }
 }
 
+@media (min-width: 768px) {
+  .header {
+    min-height: 67px;
+    background-image: url('../img/header_bg_sm.jpg');
+  }
+}
+
 @media (min-width: 992px) {
+  .header {
+    background-image: url('../img/header_bg_md.png');
 
-  ul.buttons {
-    margin-top: 13px;
-
-    li {
-      display: block;
-
-      .menu {
-        display: none;
-      }
+    .logo {
+      width: 35%;
     }
-  }
 
-  ul.partners {
-    display: block;
-    margin-right: 80px;
-    margin-top: 44px;
+    ul.buttons {
+      margin-top: 5px;
 
-    & > li > a {
-      padding: 0 25px;
-    }
-  }
+      li {
+        display: block;
 
-  .mainmenu {
-    height: 38px;
-
-    .nav {
-      display: block;
-
-      & > li > a {
-        padding: 8px 19px;
-
-        &:hover, &:focus {
-          background-color: #ae8d2d;
-          border-radius: 0;
+        &.menu {
+          display: none;
+          color: #434;
         }
       }
-
-      .open > a, .open > a:hover, .open > a:focus {
-        background-color: #ae8d2d;
-      }
-    }
-  }
-
-  .nav-pills {
-    height: 38px !important;
-  }
-
-  .dropdown-menu {
-    border-radius: 0;
-    margin-top: 0;
-    background-color: rgba(0, 0, 0, 0.05);
-
-    border: 0;
-    min-width: 114px;
-    box-shadow: none;
-
-    .divider {
-      height: 0;
-      margin: 4px 0;
-      overflow: hidden;
-      background-color: transparent;
-      border-bottom: 1px dotted #006ead;
     }
 
-    & > li > a {
-      color: #006ead;
+    ul.partners {
+      display: block;
+      margin-right: 60px;
+      margin-top: 11px;
 
-      &:hover, &:focus {
-        background-color: transparent;
+      & > li > a {
+        padding: 0 25px;
       }
     }
   }

@@ -165,7 +165,7 @@
         });
 
         var buildLists = function (){
-            buildListColumns('.countries ul.list', [2,3,3]);
+            buildListColumns('.countries ul.list', [2,2,3]);
         };
 
         buildLists();
