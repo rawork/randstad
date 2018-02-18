@@ -17,7 +17,7 @@
 .winner-main .title {
   color: #006ead;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .winner-main .title span {
@@ -44,6 +44,12 @@
 
 .winner-main ul li.certificate img {
   max-width: 70% !important;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.winner-main ul li.certificate_extra img {
+  max-width: 100% !important;
   display: inline-block;
   margin-top: 0;
 }

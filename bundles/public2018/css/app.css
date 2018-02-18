@@ -81,8 +81,14 @@ img {
   background-color: #cee0e5; }
 
 .slider {
-  margin: 40px 0;
+  margin: 0;
   background-color: #fff; }
+
+.line {
+  height: 1px;
+  background-color: #006ead;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 dl {
   margin: 0; }
@@ -681,7 +687,7 @@ ul.reports {
 .winner-main .title {
   color: #006ead;
   text-align: center;
-  font-size: 16px; }
+  font-size: 20px; }
 
 .winner-main .title span {
   display: block; }
@@ -703,6 +709,11 @@ ul.reports {
 
 .winner-main ul li.certificate img {
   max-width: 70% !important;
+  display: inline-block;
+  margin-top: 0; }
+
+.winner-main ul li.certificate_extra img {
+  max-width: 100% !important;
   display: inline-block;
   margin-top: 0; }
 
@@ -924,4 +935,4 @@ ul.info-partners li {
 
 @media (min-width: 992px) {
   .footer {
-    background-image: url("../img/header_bg_md.jpg"); } }
+    background-image: url("../img/header_bg_md.png"); } }
