@@ -9,8 +9,10 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
+  color: #006ead;
 
   small {
+    color: #00a1d6;
     font-weight: normal;
     font-size: 65%;
     display: block;
@@ -76,7 +78,8 @@ a {
   &.add {
     display: block;
     cursor: pointer;
-    margin: 5px 0 15px 0;
+    margin: 15px 0;
+    font-size: 18px;
   }
 }
 
@@ -180,21 +183,30 @@ dl {
 
 .attention {
   display: none;
-  color: #006ead;
+  color: #fff;
   font-size: 16px;
+  margin: 40px 0;
 
   &_rus {
     display: block;
   }
 
-  .content & a {
-    color: #006ead;
+  &-bg {
+    background-color: #006ead;
+    //background-image: url('../img/attention_bg_xs.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  a {
+    color: #fff;
     display: inline-block;
-    border-bottom: 1px dashed #006ead;
-    font-weight: 500;
+    border-bottom: 1px dashed #fff;
+    font-weight: 700;
     margin-top: 10px;
 
     &:hover, &:active {
+      color: #fff;
       text-decoration: none;
       border-bottom-color: transparent;
     }
@@ -204,6 +216,11 @@ dl {
 
 form.register {
   margin-bottom: 30px;
+
+  label {
+    color: #006ead;
+    font-size: 16px;
+  }
 }
 
 .modal-content {
@@ -292,6 +309,12 @@ form.register {
     padding-left: 270px;
     padding-bottom: 40px;
   }
+
+  .attention {
+    &-bg {
+      //background-image: url('../img/attention_bg_sm.jpg');
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -307,5 +330,11 @@ form.register {
   .man-report {
     background-size: 402px;
     padding-right: 450px;
+  }
+
+  .attention {
+    &-bg {
+      //background-image: url('../img/attention_bg_md.jpg');
+    }
   }
 }

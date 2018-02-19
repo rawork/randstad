@@ -1,32 +1,10 @@
 .countries {
   margin-top: 20px;
-  position: relative;
-
-  .emblem {
-    background-color: #3676bb;
-    width: 134px;
-    height: 134px;
-    border-radius: 67px;
-    color: #fff;
-    text-align: center;
-    padding-top: 5px;
-    font-size: 20px;
-    position: absolute;
-    top: 110px;
-    left: 55%;
-    margin-left: -67px;
-
-    span {
-      display: block;
-      font-size: 50px;
-      line-height: 50px;
-    }
-  }
 
   ul.list {
     margin: 0;
     padding: 0;
-    margin-top: 50px;
+
     list-style: none;
     font-size: 12px;
 
@@ -48,14 +26,42 @@
       margin-right: 3px;
     }
   }
+
+  .map {
+    position: relative;
+    margin-bottom: 130px;
+
+    .emblem {
+      background-color: #3676bb;
+      width: 134px;
+      height: 134px;
+      border-radius: 67px;
+      color: #fff;
+      text-align: center;
+      padding-top: 8px;
+      font-size: 20px;
+      line-height: 22px;
+      position: absolute;
+      bottom: -110px;
+      left: 55%;
+      margin-left: -67px;
+
+      span {
+        display: block;
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
 }
 
 @media (min-width: 480px) {
   .countries {
-    .emblem {
-      top: 110px;
+    .map {
+      .emblem {
+        bottom: -100px;
+      }
     }
-
     ul.list {
       li {
         padding: 0 20px 20px 0;
@@ -71,36 +77,55 @@
 
 @media (min-width: 600px) {
   .countries {
-    .emblem {
-      width: 110px;
-      height: 110px;
-      border-radius: 55px;
-      color: #fff;
-      text-align: center;
-      padding-top: 10px;
-      font-size: 18px;
-      top: 130px;
+    .map {
+      margin-bottom: 120px;
+
+      img {
+        width: 100%;
+      }
+
+      .emblem {
+        bottom: -90px;
+      }
     }
+
   }
 }
 
 @media (min-width: 768px) {
-  .countries .emblem {
-    top: 140px;
+  .countries {
+    .map {
+      .emblem {
+        bottom: -90px;
+      }
+    }
   }
 }
 
 @media (min-width: 992px) {
   .countries {
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 0;
 
-    .emblem {
-      top: 100px;
+    .map {
+      margin-bottom: 90px;
+
+      .emblem {
+        bottom: -70px;
+      }
     }
+
 
     ul.list {
       ul {
         width: 33.3333%;
+
+        li {
+          padding-right: 16px;
+        }
+
+        img {
+          margin-right: 8px;
+        }
       }
     }
   }
