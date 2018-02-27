@@ -57,7 +57,7 @@
                 <div class="tiser">{raMethod path="Fuga:Public:Common:block" args="['name':'tiser']"}</div>
             </div>
             <div class="col-xs-12 col-sm-5 col-md-4">
-                <div class="button-container">{raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}</div>
+                {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
             </div>
         </div>
     </div>
