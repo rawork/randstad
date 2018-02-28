@@ -19,9 +19,9 @@
     <div class="header">
         <div class="container">
                 <div class="logo pull-left">
-                    <img class="visible-xs-block" src="{$theme_ref}/public2018/img/logo_xs.png" />
-                    <img class="visible-sm-block" src="{$theme_ref}/public2018/img/logo_sm.png" />
-                    <img class="visible-md-block visible-lg-block" src="{$theme_ref}/public2018/img/logo_md.png" />
+                    <img class="visible-xs-block" src="{$theme_ref}/public2018/img/logo_xs2.png" />
+                    <img class="visible-sm-block" src="{$theme_ref}/public2018/img/logo_sm2.png" />
+                    <img class="visible-md-block visible-lg-block" src="{$theme_ref}/public2018/img/logo_md2.png" />
                 </div>
                 {include file="menu/headermenu.tpl"}
         </div>
