@@ -8,8 +8,8 @@
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/bootstrap3/css/bootstrap.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick-theme.css" media="screen">
-    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/app.css" media="screen">
-    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/_slider.css" media="screen">
+    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/app.css?2018022801" media="screen">
+    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/_slider.css?2018022801" media="screen">
     <!--[if lt IE 9]>
     {*<script type="text/javascript" src="{$theme_ref}/ie/html5shiv.js"></script>*}
     <script type="text/javascript" src="{$theme_ref}/ie/respond.min.js"></script>
