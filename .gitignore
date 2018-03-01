@@ -35,7 +35,6 @@ app/backup/*
 !app/backup/.gitkeep
 
 # Vendors
-composer.lock
 composer.phar
 vendor/*
 node_modules

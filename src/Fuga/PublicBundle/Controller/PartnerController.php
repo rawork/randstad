@@ -12,8 +12,9 @@ class PartnerController extends PublicController {
 	
 	public function indexAction() {
 		$items = $this->get('container')->getItems('partner_partner', 'publish=1');
+		$show = count($items) > 0;
 		
-		return $this->get('templating')->render('partner/index.tpl', compact('items'));
+		return $this->get('templating')->render('partner/index.tpl', compact('items', 'show'));
 	}
 
 }

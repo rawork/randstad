@@ -103,9 +103,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="content content-partners">
-            <h2><a name="partners"></a>Информационные партнеры</h2>
+
             {raMethod path="Fuga:Public:Partner:index"}
         </div>
     </div>
