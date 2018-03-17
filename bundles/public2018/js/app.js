@@ -309,7 +309,21 @@
       //   }
       // }
 
+      $(document).ready(function() {
+        var isVideoOpened = Cookies.get('isVideoOpened');
+        // console.log(isVideoOpened);
 
+        if (typeof isVideoOpened == "undefined" || isVideoOpened == false) {
+          $('.video a').trigger('click');
+          $('#videoModal').on('hide.bs.modal', function(e) {
+
+            Cookies.set('isVideoOpened', true, {expires: 30});
+
+          })
+        }
+
+
+      })
 
     });
 
