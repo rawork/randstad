@@ -1,0 +1,45 @@
+.modal-dialog {
+  &_video {
+    .modal-body {
+      padding: 0;
+    }
+
+    .close {
+      position: absolute;
+      margin-right: 0;
+      margin-top: 0;
+      z-index: 1100;
+      color: #fff;
+      font-weight: 300;
+      font-size: 40px;
+      right: 10px;
+      top: 0;
+      opacity: 0.8;
+    }
+  }
+}
+
+.modal-content {
+  box-shadow: none;
+
+  iframe {
+    border: 0;
+    margin-bottom: -5px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-dialog {
+    &_video {
+      width: 840px;
+    }
+  }
+
+  .modal-content {
+    iframe {
+      height: 470px;
+    }
+  }
+}
+

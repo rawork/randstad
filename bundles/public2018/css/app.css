@@ -350,6 +350,46 @@ form.register {
       .header ul.partners > li > a {
         padding: 0 25px; } }
 
+.video {
+  background-color: #0d88c1; }
+  .video__title {
+    text-align: center; }
+    .video__title a {
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 300px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 20px 15px;
+      border: 1px solid #fff;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      -webkit-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      transition: all .2s ease-out; }
+      .video__title a:hover, .video__title a:active, .video__title a:focus {
+        text-decoration: none;
+        color: #0d88c1;
+        background-color: #fff;
+        outline: none; }
+    .active .video__title {
+      display: none; }
+  .video__content {
+    text-align: center;
+    display: none; }
+    .video__content .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-weight: 300;
+      font-size: 60px;
+      text-shadow: 1px;
+      color: #fff; }
+    .active .video__content {
+      display: block; }
+
 .mainmenu {
   height: 27px;
   font-size: 16px;
@@ -952,3 +992,32 @@ ul.info-partners li {
 @media (min-width: 992px) {
   .footer {
     background-image: url("../img/header_bg_md.png"); } }
+
+.modal-dialog_video .modal-body {
+  padding: 0; }
+
+.modal-dialog_video .close {
+  position: absolute;
+  margin-right: 0;
+  margin-top: 0;
+  z-index: 1100;
+  color: #fff;
+  font-weight: 300;
+  font-size: 40px;
+  right: 10px;
+  top: 0;
+  opacity: 0.8; }
+
+.modal-content {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .modal-content iframe {
+    border: 0;
+    margin-bottom: -5px;
+    height: 340px; }
+
+@media screen and (min-width: 992px) {
+  .modal-dialog_video {
+    width: 840px; }
+  .modal-content iframe {
+    height: 470px; } }

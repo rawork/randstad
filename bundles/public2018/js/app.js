@@ -1,6 +1,70 @@
 (function($) {
     $(function() {
 
+      autoPlayYouTubeModal();
+
+      //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+      function autoPlayYouTubeModal() {
+        var trigger = $("body").find('[data-toggle="modal"]');
+        trigger.click(function () {
+          var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-theVideo"),
+            videoSRCauto = videoSRC + "&autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+            $(theModal + ' iframe').attr('src', videoSRC);
+          });
+        });
+      }
+
+//       var $allVideos = $("iframe[src^='//www.youtube.com']"),
+//           // The element that is fluid width
+//           $fluidEl = $(".video__content");
+//       // Figure out and save aspect ratio for each video
+//       $allVideos.each(function() {
+//         $(this)
+//           .data('aspectRatio', this.height / this.width)
+//           // and remove the hard coded width/height
+//           .removeAttr('height')
+//           .removeAttr('width');
+//       });
+//
+//       $('.video__title a').on('click', function(e) {
+//         e.preventDefault();
+//
+//         $(this).parents('.video').toggleClass('active');
+//         var newWidth = $fluidEl.width();
+//         console.log(newWidth);
+//
+//         // Resize all videos according to their own aspect ratio
+//         $allVideos.each(function() {
+//
+//           var $el = $(this);
+//           $el
+//             .width(newWidth)
+//             .height(newWidth * $el.data('aspectRatio'));
+//
+//         });
+//       });
+//
+//       // When the window is resized
+//       $(window).resize(function() {
+//
+//         var newWidth = $fluidEl.width();
+//
+//         // Resize all videos according to their own aspect ratio
+//         $allVideos.each(function() {
+//
+//           var $el = $(this);
+//           $el
+//             .width(newWidth)
+//             .height(newWidth * $el.data('aspectRatio'));
+//
+//         });
+//
+// // Kick off one resize to fix all videos on page load
+//       }).resize();
+
         $(document).on('click', '.news dd>a', function(e){
             e.preventDefault();
 
@@ -216,6 +280,37 @@
             //console.log('do hash');
             $(window.location.hash).modal('show')
         }
+
+      //   var player;
+      // // create youtube player
+      // function onYouTubePlayerAPIReady() {
+      //   player = new YT.Player('videoinvite', {
+      //     width: '560',
+      //     height: '315',
+      //     videoId: 'Qd0o7_W1_mg',
+      //     rel: 0,
+      //     showinfo: 0,
+      //     events: {
+      //       onReady: onPlayerReady,
+      //       onStateChange: onPlayerStateChange
+      //     }
+      //   });
+      // }
+      //
+      // // autoplay video
+      // function onPlayerReady(event) {
+      //   event.target.playVideo();
+      // }
+      //
+      // // when video ends
+      // function onPlayerStateChange(event) {
+      //   if(event.data === 0) {
+      //     $('.video').toggleClass('active')
+      //   }
+      // }
+
+
+
     });
 
 })(jQuery);
