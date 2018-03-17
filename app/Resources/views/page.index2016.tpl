@@ -173,7 +173,7 @@
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
     <script src="{$theme_ref}/scrollto/jquery.scrollTo.js"></script>
     <script src="{$theme_ref}/slick/slick.min.js"></script>
-    <script src="{$theme_ref}/public2018/js/app.js?2018031701"></script>
+    <script src="{$theme_ref}/public2018/js/app.js?2018031703"></script>
     {literal}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
