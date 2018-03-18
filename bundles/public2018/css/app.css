@@ -534,7 +534,8 @@ ul.mobile-mainmenu li ul {
       -o-transition: all .2s ease-out;
       transition: all .2s ease-out;
       text-transform: uppercase; }
-      .award-announce .button-container a.info-partners-teaser:hover, .award-announce .button-container a.info-partners-teaser:active {
+      .award-announce .button-container a.info-partners-teaser:hover, .award-announce .button-container a.info-partners-teaser:active, .award-announce .button-container a.info-partners-teaser:focus {
+        outline: none;
         color: #fff;
         background-color: #006ead;
         text-decoration: none; }
@@ -993,20 +994,21 @@ ul.info-partners li {
   .footer {
     background-image: url("../img/header_bg_md.png"); } }
 
-.modal-dialog_video .modal-body {
-  padding: 0; }
-
-.modal-dialog_video .close {
-  position: absolute;
-  margin-right: 0;
-  margin-top: 0;
-  z-index: 1100;
-  color: #fff;
-  font-weight: 300;
-  font-size: 40px;
-  right: 10px;
-  top: 0;
-  opacity: 0.8; }
+.modal-dialog_video {
+  margin: 0; }
+  .modal-dialog_video .modal-body {
+    padding: 0; }
+  .modal-dialog_video .close {
+    position: absolute;
+    margin-right: 0;
+    margin-top: 0;
+    z-index: 1100;
+    color: #fff;
+    font-weight: 300;
+    font-size: 40px;
+    right: 10px;
+    top: 0;
+    opacity: 0.8; }
 
 .modal-content {
   -webkit-box-shadow: none;
@@ -1016,8 +1018,15 @@ ul.info-partners li {
     margin-bottom: -5px;
     height: 340px; }
 
+@media screen and (min-width: 768px) {
+  .modal-dialog_video {
+    width: auto;
+    margin: 0 auto; }
+  .modal-content iframe {
+    height: 340px; } }
+
 @media screen and (min-width: 992px) {
   .modal-dialog_video {
-    width: 840px; }
+    width: auto; }
   .modal-content iframe {
-    height: 470px; } }
+    height: 630px; } }

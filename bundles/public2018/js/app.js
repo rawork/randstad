@@ -7,12 +7,15 @@
       function autoPlayYouTubeModal() {
         var trigger = $("body").find('[data-toggle="modal"]');
         trigger.click(function () {
+          var height = $(window).height();
+          console.log('height', height);
           var theModal = $(this).data("target"),
             videoSRC = $(this).attr("data-theVideo"),
             videoSRCauto = videoSRC + "&autoplay=1";
           $(theModal + ' iframe').attr('src', videoSRCauto);
           $(theModal + ' button.close').click(function () {
             $(theModal + ' iframe').attr('src', videoSRC);
+            $(theModal + ' iframe').css('height', height);
           });
         });
       }

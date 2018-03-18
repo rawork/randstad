@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/bootstrap3/css/bootstrap.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick.css" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/slick/slick-theme.css" media="screen">
-    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/app.css?2018031702" media="screen">
+    <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/app.css?2018031802" media="screen">
     <link type="text/css" rel="stylesheet" href="{$theme_ref}/public2018/css/_slider.css?2018022801" media="screen">
     <!--[if lt IE 9]>
     {*<script type="text/javascript" src="{$theme_ref}/ie/html5shiv.js"></script>*}
@@ -16,15 +16,15 @@
     <![endif]-->
 </head>
 <body>
-    {if $smarty.now > strtotime('2018-03-17 15:00:00') && $smarty.now < strtotime('2018-04-01 12:00:00')}
-    <div class="video">
-        <div class="video__title"><a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/Qd0o7_W1_mg?rel=0&showinfo=0">Видеоприглашение</a></div>
+    {*{if $smarty.now > strtotime('2018-03-17 15:00:00') && $smarty.now < strtotime('2018-04-01 12:00:00')}*}
+    {*<div class="video">*}
+        {*<div class="video__title"><a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/Qd0o7_W1_mg?rel=0&showinfo=0">Видеоприглашение</a></div>*}
         {*<div class="video__content">*}
             {*<a href="#" class="close">&times;</a>*}
             {*<iframe width="560" height="315" src="https://www.youtube.com/embed/Qd0o7_W1_mg?rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen></iframe>*}
         {*</div>*}
-    </div>
-    {/if}
+    {*</div>*}
+    {*{/if}*}
     <div class="header">
         <div class="container">
                 <div class="logo pull-left">
@@ -67,6 +67,7 @@
             </div>
             <div class="col-xs-12 col-sm-5 col-md-4">
                 {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
+                <div class="button-container"><a class="info-partners-teaser" href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/Qd0o7_W1_mg?rel=0&showinfo=0">Видеоприглашение</a></div>
             </div>
         </div>
     </div>
@@ -161,7 +162,7 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <div>
-                        <iframe width="100%" src=""></iframe>
+                        <iframe width="100%" src="" allow="autoplay; encrypted-media"  allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -173,7 +174,7 @@
     <script src="{$theme_ref}/bootstrap3/js/bootstrap.min.js"></script>
     <script src="{$theme_ref}/scrollto/jquery.scrollTo.js"></script>
     <script src="{$theme_ref}/slick/slick.min.js"></script>
-    <script src="{$theme_ref}/public2018/js/app.js?2018031703"></script>
+    <script src="{$theme_ref}/public2018/js/app.js?2018031802"></script>
     {literal}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
