@@ -314,10 +314,10 @@
 
       $(document).ready(function() {
         var isVideoOpened = Cookies.get('isVideoOpened');
-        // console.log(isVideoOpened);
+        var showInviteForBanner = window.location.href.indexOf("?video=1") > -1;
 
-        if (typeof isVideoOpened == "undefined" || isVideoOpened == false) {
-          $('.video a').trigger('click');
+        if (showInviteForBanner || typeof isVideoOpened == "undefined" || isVideoOpened == false) {
+          $('#invite-link').trigger('click');
           $('#videoModal').on('hide.bs.modal', function(e) {
 
             Cookies.set('isVideoOpened', true, {expires: 30});
