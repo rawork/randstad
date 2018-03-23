@@ -20,7 +20,7 @@
     <div class="header">
         <div class="container">
             <div class="logo pull-left">
-                <a href="/award/">
+                <a href="/">
                     <img class="visible-xs-block" src="{$theme_ref}/public2018/img/logo_xs2.png" />
                     <img class="visible-sm-block" src="{$theme_ref}/public2018/img/logo_sm2.png" />
                     <img class="visible-md-block visible-lg-block" src="{$theme_ref}/public2018/img/logo_md2.png" />
@@ -46,7 +46,7 @@
                             </ul>
                         </li>
                     {else}
-                        <li><a href="{if $menuitem.url}{$menuitem.url}{else}/award/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
+                        <li><a href="{if $menuitem.url}{$menuitem.url}{else}/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
                     {/if}
                 {/foreach}
             </ul>

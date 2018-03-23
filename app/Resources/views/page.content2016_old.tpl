@@ -19,7 +19,7 @@
 <body>
         <div class="container">
             <div class="header">
-                <div class="logo pull-left"><a href="/award/"><img class="logo-lg" src="{$theme_ref}/public2016/img/logo.png"></a></div>
+                <div class="logo pull-left"><a href="/"><img class="logo-lg" src="{$theme_ref}/public2016/img/logo.png"></a></div>
                 {include file="menu/headermenu.tpl"}
             </div>
         </div>
@@ -40,7 +40,7 @@
                                     </ul>
                                 </li>
                             {else}
-                                <li><a href="{if $menuitem.url}{$menuitem.url}{else}/award/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
+                                <li><a href="{if $menuitem.url}{$menuitem.url}{else}/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
                             {/if}
                         {/foreach}
                     </ul>

@@ -1,7 +1,7 @@
 <div id="mobile-menu">
     <div class="links">
         <a href="mailto:award@ancor.ru" class="btn-contact" title="Связаться с нами"><span class="icon-envelope"></span></a>
-        {*<a target="_blank" href="/award/guests" class="btn-register" title="Станьте гостем церемонии"><span class="icon-register"></span></a>*}
+        {*<a target="_blank" href="/guests" class="btn-register" title="Станьте гостем церемонии"><span class="icon-register"></span></a>*}
     </div>
     <ul class="mobile-partners">
         <li><a target="_blank" href="https://ancor.ru">Холдинг АНКОР</a></li>
@@ -22,7 +22,7 @@
                     </ul>
                 </li>
             {else}
-                <li><a href="{if $menuitem.url}{$menuitem.url}{else}/award/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
+                <li><a href="{if $menuitem.url}{$menuitem.url}{else}/#{$menuitem.name}{/if}">{$menuitem.title}</a></li>
             {/if}
         {/foreach}
     </ul>
