@@ -53,7 +53,7 @@ DirectoryIndex index.php
 #    RewriteRule ^(.*)$ http://ancor.ru/$1 [L,R=301]
 
     <IfModule mod_vhost_alias.c>                                                              
-        RewriteBase /award/                                                                
+        RewriteBase /
     </IfModule> 
 
     RewriteCond %{REQUEST_FILENAME} !-f

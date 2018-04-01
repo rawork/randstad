@@ -18,9 +18,10 @@ class Router {
 	
 	public function __construct($container){
 		$this->container = $container;
-		if (!preg_match("/^\\".PRJ_REF.'/i', $_SERVER['REQUEST_URI'])) {
-			$this->redirect(PRJ_REF.$_SERVER['REQUEST_URI']);
-		}
+		$this->setParam('locale', PRJ_LOCALE);
+//		if (!preg_match("/^\\".PRJ_REF.'/i', $_SERVER['REQUEST_URI'])) {
+//			$this->redirect(PRJ_REF.$_SERVER['REQUEST_URI']);
+//		}
 		$this->url = str_replace(PRJ_REF, '', $_SERVER['REQUEST_URI']);
 	}
 	

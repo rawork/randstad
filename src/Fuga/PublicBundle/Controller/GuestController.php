@@ -82,7 +82,7 @@ class GuestController extends PublicController {
 	public function exportAction() {
 		$user = $this->get('security')->getCurrentUser();
 		if (!$user || !$this->get('security')->isGroup('admin')) {
-			$this->get('router')->redirect('/award/guests');
+			$this->get('router')->redirect('/guests');
 		}
 		
 		$filepath = PRJ_DIR.'/app/logs/guests.xlsx';
