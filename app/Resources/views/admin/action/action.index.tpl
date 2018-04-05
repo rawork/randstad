@@ -8,7 +8,7 @@
 <th width="1%"><input type="checkbox" id="list-checker"></th>
 <th width="1%">#</th>
 {foreach from=$fields item=field}
-	{if isset($field.width)}
+	{if !empty($field.width)}
 	<th width="{$field.width}">{$field.title}</th>
 	{/if}
 {/foreach}
