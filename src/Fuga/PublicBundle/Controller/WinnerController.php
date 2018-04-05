@@ -31,7 +31,7 @@ class WinnerController extends PublicController {
     }
 
 	public function otherAction() {
-		$items = $this->get('container')->getItems('winner_winner', 'publish=1 AND is_main=0 AND is_extra=0');
+		$items = $this->get('container')->getItems('winner_winner', 'publish=1 AND is_main=0 AND is_extra=0 AND is_spec=0');
 
 		return $this->get('templating')->render('winner/other.tpl', compact('items'));
 	}
