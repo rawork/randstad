@@ -67,7 +67,7 @@
             </div>
             <div class="col-xs-12 col-sm-5 col-md-4">
                 {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
-                <div class="button-container"><a href="#reports" class="info-partners-teaser" >РЕЗУЛЬТАТЫ В 22:00</a></div>
+                <div class="button-container"><a href="#reports" class="info-partners-teaser" >РЕЗУЛЬТАТЫ</a></div>
             </div>
         </div>
     </div>
