@@ -67,7 +67,7 @@
             </div>
             <div class="col-xs-12 col-sm-5 col-md-4">
                 {raMethod path="Fuga:Public:Common:block" args="['name':'partner_link']"}
-                <div class="button-container"><a class="info-partners-teaser" id="invite-link" href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/Qd0o7_W1_mg?rel=0&showinfo=0">Видеоприглашение</a></div>
+                <div class="button-container"><a href="#reports" class="info-partners-teaser" >РЕЗУЛЬТАТЫ В 22:00</a></div>
             </div>
         </div>
     </div>
@@ -103,6 +103,7 @@
             <h2><a name="winners"></a>Победители</h2>
             {raMethod path="Fuga:Public:Winner:main"}
             {raMethod path="Fuga:Public:Winner:other"}
+            {raMethod path="Fuga:Public:Winner:spec"}
             {raMethod path="Fuga:Public:Winner:extra"}
         </div>
     </div>

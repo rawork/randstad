@@ -312,21 +312,21 @@
       //   }
       // }
 
-      $(document).ready(function() {
-        var isVideoOpened = Cookies.get('isVideoOpened');
-        var showInviteForBanner = window.location.href.indexOf("?video=1") > -1;
-
-        if (showInviteForBanner || typeof isVideoOpened == "undefined" || isVideoOpened == false) {
-          $('#invite-link').trigger('click');
-          $('#videoModal').on('hide.bs.modal', function(e) {
-
-            Cookies.set('isVideoOpened', true, {expires: 30});
-
-          })
-        }
-
-
-      })
+      // $(document).ready(function() {
+      //   var isVideoOpened = Cookies.get('isVideoOpened');
+      //   var showInviteForBanner = window.location.href.indexOf("?video=1") > -1;
+      //
+      //   if (showInviteForBanner || typeof isVideoOpened == "undefined" || isVideoOpened == false) {
+      //     $('#invite-link').trigger('click');
+      //     $('#videoModal').on('hide.bs.modal', function(e) {
+      //
+      //       Cookies.set('isVideoOpened', true, {expires: 30});
+      //
+      //     })
+      //   }
+      //
+      //
+      // })
 
     });
 

@@ -22,6 +22,14 @@ class WinnerController extends PublicController {
 		return $this->get('templating')->render('winner/extra.tpl', compact('items'));
 	}
 
+    public function specAction() {
+        $items = $this->get('container')->getItems('winner_winner', 'publish=1 AND is_spec=1');
+
+        $show = count($items) > 0;
+
+        return $this->get('templating')->render('winner/spec.tpl', compact('items', 'show'));
+    }
+
 	public function otherAction() {
 		$items = $this->get('container')->getItems('winner_winner', 'publish=1 AND is_main=0 AND is_extra=0');
 
